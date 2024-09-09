@@ -1,0 +1,22 @@
+{
+  "name": "coreapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chinnaphat Rujiboolasret",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dateformat": "^5.0.3",
+    "expres": "^0.0.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.8.0",
+    "mosca": "^2.8.3",
+    "mqtt": "^5.10.1"
+  }
+}

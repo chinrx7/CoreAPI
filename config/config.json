@@ -1,0 +1,9 @@
+{
+    "ACCESS_SECRET" : "",
+    "SYSTEM_TOKEN_TIME" : "1d",
+    "USER_TOKEN_TIME" : "60m",
+    "DB": "mongodb://127.0.0.1:27017",
+    "DB_PREFIX": "DATA_",
+    "PORT": 5876,
+    "DEBUG": 0
+}
