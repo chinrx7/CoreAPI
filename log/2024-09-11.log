@@ -1,0 +1,36 @@
+2024-09-11 3:12:07 PM DBMessage MongoRuntimeError: Unable to parse 127.0.0.1:27017Logs with URL Error
+2024-09-11 3:12:19 PM DBMessage MongoServerError: Authentication failed. Error
+2024-09-11 3:13:22 PM DBMessage MongoServerError: Authentication failed. Error
+2024-09-11 3:15:55 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 3:18:38 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 3:31:15 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 3:31:36 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 3:32:22 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 3:41:31 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 3:41:33 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 3:49:42 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:25:04 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:29:57 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:34:43 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:35:20 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:37:45 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:38:34 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:39:27 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:40:12 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:40:14 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:40:34 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:40:54 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:42:22 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:42:30 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:43:27 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:43:29 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:44:15 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:44:42 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:45:14 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:45:54 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:46:00 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:48:04 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:54:19 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:54:23 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:55:07 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-11 4:55:46 PM CoreAPI Started and listen at port: 5876 Info

@@ -1,8 +1,9 @@
 {
     "ACCESS_SECRET" : "",
-    "SYSTEM_TOKEN_TIME" : "1d",
+    "SYSTEM_TOKEN_TIME" : "99y",
     "USER_TOKEN_TIME" : "60m",
-    "DB": "mongodb://127.0.0.1:27017",
+    "Secret" : "uisngufdsgdygdghgjkf526t4urubfr6trfvf6gfyst5rggs4tvcwt5ewyrgdg5fdyf56d56dghsdgusg4",
+    "DB": "mongodb://127.0.0.1:27017/",
     "DB_PREFIX": "DATA_",
     "PORT": 5876,
     "DEBUG": 0
