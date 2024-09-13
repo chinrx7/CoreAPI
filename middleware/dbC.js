@@ -12,6 +12,7 @@ module.exports = {
         MongoClient.connect(dbUrl)
         .then((client) => {
             dbCfgCon = client.db()
+            logger.loginfo('DBConfigure', 'Connected to database', 'Info');
             return cb()
         })
         .catch(err =>{

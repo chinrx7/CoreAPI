@@ -4,7 +4,6 @@
     "USER_TOKEN_TIME" : "60m",
     "Secret" : "uisngufdsgdygdghgjkf526t4urubfr6trfvf6gfyst5rggs4tvcwt5ewyrgdg5fdyf56d56dghsdgusg4",
     "DB": "mongodb://127.0.0.1:27017/",
-    "DB_PREFIX": "DATA_",
     "PORT": 5876,
     "DEBUG": 0
 }

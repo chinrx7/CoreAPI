@@ -1,0 +1,59 @@
+2024-09-12 11:16:23 AM CoreAPI Started and listen at port: 5876 Info
+2024-09-12 11:16:53 AM DBMessage MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017 Error
+2024-09-12 11:16:53 AM DBConfigure MongoServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017 Error
+2024-09-12 11:25:00 AM CoreAPI Started and listen at port: 5876 Info
+2024-09-12 11:25:47 AM CoreAPI Started and listen at port: 5876 Info
+2024-09-12 11:25:47 AM DBMessage Connected to database Inro
+2024-09-12 11:25:53 AM CoreAPI Started and listen at port: 5876 Info
+2024-09-12 11:25:53 AM DBMessage Connected to database Info
+2024-09-12 11:26:10 AM CoreAPI Started and listen at port: 5876 Info
+2024-09-12 11:26:10 AM DBMessage Connected to database Info
+2024-09-12 11:26:10 AM DBConfigure Connected to database Info
+2024-09-12 4:57:03 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-12 4:57:03 PM DBMessage Connected to database Info
+2024-09-12 4:57:03 PM DBConfigure Connected to database Info
+2024-09-12 4:57:03 PM DBConfigure Connected to database Info
+2024-09-12 4:58:12 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-12 4:58:12 PM DBMessage Connected to database Info
+2024-09-12 4:58:12 PM DBConfigure Connected to database Info
+2024-09-12 4:58:13 PM DBConfigure Connected to database Info
+2024-09-12 4:58:57 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-12 4:58:57 PM DBMessage Connected to database Info
+2024-09-12 4:58:57 PM DBConfigure Connected to database Info
+2024-09-12 4:58:57 PM DBConfigure Connected to database Info
+2024-09-12 5:08:27 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-12 5:08:27 PM DBMessage Connected to database Info
+2024-09-12 5:08:27 PM DBConfigure Connected to database Info
+2024-09-12 5:08:27 PM DBConfigure Connected to database Info
+2024-09-12 5:09:23 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-12 5:09:23 PM DBMessage Connected to database Info
+2024-09-12 5:09:23 PM DBConfigure Connected to database Info
+2024-09-12 5:09:23 PM DBConfigure Connected to database Info
+2024-09-12 5:09:47 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-12 5:09:47 PM DBMessage Connected to database Info
+2024-09-12 5:09:47 PM DBConfigure Connected to database Info
+2024-09-12 5:09:47 PM DBConfigure Connected to database Info
+2024-09-12 5:10:34 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-12 5:10:34 PM DBMessage Connected to database Info
+2024-09-12 5:10:34 PM DBConfigure Connected to database Info
+2024-09-12 5:10:34 PM DBConfigure Connected to database Info
+2024-09-12 5:15:58 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-12 5:15:58 PM DBMessage Connected to database Info
+2024-09-12 5:15:58 PM DBConfigure Connected to database Info
+2024-09-12 5:15:58 PM DBConfigure Connected to database Info
+2024-09-12 5:16:21 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-12 5:16:21 PM DBMessage Connected to database Info
+2024-09-12 5:16:21 PM DBConfigure Connected to database Info
+2024-09-12 5:16:21 PM DBConfigure Connected to database Info
+2024-09-12 5:16:42 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-12 5:16:42 PM DBMessage Connected to database Info
+2024-09-12 5:16:42 PM DBConfigure Connected to database Info
+2024-09-12 5:16:42 PM DBConfigure Connected to database Info
+2024-09-12 5:18:16 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-12 5:18:16 PM DBMessage Connected to database Info
+2024-09-12 5:18:16 PM DBConfigure Connected to database Info
+2024-09-12 5:18:16 PM DBConfigure Connected to database Info
+2024-09-12 5:18:27 PM CoreAPI Started and listen at port: 5876 Info
+2024-09-12 5:18:27 PM DBMessage Connected to database Info
+2024-09-12 5:18:27 PM DBConfigure Connected to database Info
+2024-09-12 5:18:27 PM DBConfigure Connected to database Info
