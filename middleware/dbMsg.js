@@ -9,10 +9,12 @@ let dbMsgCon;
 
 module.exports = {
     connectMsgDB: (cb) => {
+        if(dbMsgCon){
+            return cb();
+        }
         MongoClient.connect(dbUrl)
         .then((client) => {
             dbMsgCon = client.db()
-            logger.loginfo('DBMessage', 'Connected to database', 'Info');
             return cb()
         })
         .catch(err =>{

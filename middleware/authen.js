@@ -1,7 +1,7 @@
 const bcrypt = require('bcrypt');
 const { config } = require('./config');
 const jwt = require('jsonwebtoken');
-const { getDBCfg ,connectCfgDB } = require('./dbC');
+const { connectCfgDB, getDBCfg } = require('./dbC');
 const logger = require('./log');
 
 let dbC;

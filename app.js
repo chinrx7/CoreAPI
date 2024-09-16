@@ -5,8 +5,6 @@ const logger = require('./middleware/log');
 
 const { config } = require('./middleware/config');
 
-console.log(config)
-
 const app = express();
 
 app.use(express.json({ limit: '100mb' }));

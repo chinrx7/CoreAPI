@@ -66,3 +66,46 @@ module.exports.getPoints = async (req, res) => {
         res.status(204).json('Invalid request!');
     }
 }
+
+module.exports.getInterfaces = async (req, res) => {
+    if(req.body){
+        const token = req.headers["authorization"];
+        if(auth.ValidateToken(token)){
+            const { InterfaceId, PointSource } = req.body;
+            const result = await cfg.getInterfaces(InterfaceId, PointSource);
+            if(result){
+                res.status(200).json(result);
+            }
+            else{
+                res.status(200).json('No interface setting found!')
+            }
+        }
+        else{
+            res.status(403).json('Invalid Token!')
+        }
+    }
+    else{
+        res.status(204).json('Invalid request!')
+    }
+}
+
+module.exports.getDBSources = async (req, res) => {
+    if (req.body) {
+        const token = req.headers["authorization"];
+        if (auth.ValidateToken(token)) {
+            const result = await cfg.getDBS();
+            if(result){
+                res.status(200).json(result);
+            }
+            else{
+                res.status(200).json('No database setting found!')
+            }
+        }
+        else {
+            res.status(403).json('Invalid Token!')
+        }
+    }
+    else {
+        res.status(204).json('Invalid request!')
+    }
+}

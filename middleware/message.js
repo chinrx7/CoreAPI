@@ -1,13 +1,5 @@
-const { connectMsgDB, getDBMsg } = require('./dbMsg');
 const util = require('./utilitys');
-
-let dbMsg;
-
-connectMsgDB((err) => {
-    if (!err) {
-        dbMsg = getDBMsg();
-    }
-});
+const { dbMsg } = require('./db');
 
 module.exports.InsertMessage = async (msgs) => {
     const DateN = new Date();
