@@ -15,10 +15,11 @@ module.exports = {
         MongoClient.connect(dbUrl)
         .then((client) => {
             dbMsgCon = client.db()
+            //logger.loginfo('DB Message', 'Connected','Info');
             return cb()
         })
         .catch(err =>{
-            logger.loginfo('DBMessage', err, 'Error');
+            logger.loginfo('DB Message', err, 'Error');
             return cb(err)
         })
     },

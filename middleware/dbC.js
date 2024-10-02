@@ -8,16 +8,22 @@ const dbUrl = config.DB + 'Configures'
 let dbCfgCon;
 
 module.exports = {
-    connectCfgDB: (cb) => {
-        MongoClient.connect(dbUrl)
-        .then((client) => {
-            dbCfgCon = client.db()
-            return cb()
-        })
-        .catch(err =>{
-            logger.loginfo('DBConfigure', err, 'Error');
-            return cb(err)
-        })
+      connectCfgDB: async (cb) => {
+        if (dbCfgCon) {
+            return cb();
+        }
+        else {
+            await MongoClient.connect(dbUrl)
+                .then((client) => {
+                    dbCfgCon = client.db()
+                    //logger.loginfo('DB Configures', 'Connected', 'Info');
+                    return cb()
+                })
+                .catch(err => {
+                    logger.loginfo('DBConfigure', err, 'Error');
+                    return cb(err)
+                })
+        }
     },
-    getDBCfg:() => dbCfgCon
+    getDBCfg: () => dbCfgCon
 }

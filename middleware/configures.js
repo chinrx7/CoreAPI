@@ -1,17 +1,13 @@
-const { connectCfgDB, getDBCfg } = require('./dbC');
+const query = require('./QuerydbC');
 const logger = require('./log');
-
-let dbC;
 
 const PCname = 'Points';
 const INTCname = 'Interfaces';
 const DBCname = 'DBSources';
+const UCname = 'Users';
+const UGCname = 'UserGroups';
 
-connectCfgDB((err) => {
-    if (!err) {
-        dbC = getDBCfg();
-    }
-})
+
 
 module.exports.getTagConfig = async (InterfaceID, PointSource) => {
     let res;
@@ -52,18 +48,52 @@ module.exports.getDBS = async () => {
         return res;
     }
     else{
-        res = 'Database source not found';
+        res = 'Database source not found!';
+    }
+}
+
+module.exports.getUsers = async (user) => {
+    let res;
+
+    let Query = {};
+    if (user) {
+        Query = { Username: user }
+    }
+
+    res= await queryDB(UCname, Query)
+
+    if(res) {
+        return res;
+    }
+    else{
+        res = 'User not found!';
+    }
+}
+
+module.exports.getUserGroup = async (user) => {
+    let res;
+
+    let Query = { Username: user };
+    const Udetial = await queryDB(UCname, Query);
+    const Ugrp = Udetial[0].Group;
+
+    Query = { Name: Ugrp }
+
+    res = await queryDB(UGCname, Query);
+    if(res) {
+        return res;
+    }
+    else{
+        res = 'User group not found!';
     }
 }
 
 queryDB = async (CName, Query) => {
     try {
         let res = [];
-        const cols = dbC.collection(CName);
-        const options = { projection: { _id: 0 } };
 
         let tags;
-        tags = await cols.find(Query, options);
+        tags = await query.Query(CName, Query)
         for await (t of tags) {
             res.push(t);
         }
