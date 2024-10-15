@@ -2,6 +2,7 @@ const msg = require('../middleware/message');
 const auth = require('../middleware/authen');
 const cfg = require('../middleware/configures');
 const rw = require('../middleware/readwrite');
+const pt = require('../middleware/points');
 
 module.exports.generatepassword = async (req, res) => {
     if (req.body) {
@@ -17,6 +18,7 @@ module.exports.generatepassword = async (req, res) => {
 module.exports.authen = async (req, res) => {
     if (req.body) {
         const { username, password } = req.body;
+        //console.log(username, password)
         const Token = await auth.Authen(username, password);
         if (Token) {
             res.status(200).json({ Access: { Token: Token } });
@@ -51,7 +53,7 @@ module.exports.getPoints = async (req, res) => {
     if (req.body) {
         const token = req.headers["authorization"];
         const { Host } = req.body;
-        if (auth.ValidateToken(token) || auth.CheckInterface(Host)) {
+        if (auth.ValidateToken(token) || await auth.CheckInterface(Host)) {
             const { InterfaceId, PointSource } = req.body;
             const result = await cfg.getTagConfig(InterfaceId, PointSource);
             if (result) {
@@ -67,6 +69,35 @@ module.exports.getPoints = async (req, res) => {
     }
     else {
         res.status(204).json('Invalid request!');
+    }
+}
+
+module.exports.read = async (req, res) => {
+    if(req.body){
+        const token = req.headers["authorization"];
+        const { Host, Request } = req.body;
+
+        if (auth.ValidateToken(token) || await auth.CheckInterface(Host)) {
+            const result = await rw.ReadDBI(Request)
+            if(result){
+                res.status(200).json(result)
+            }
+        }
+    }
+}
+
+module.exports.getPointID = async (req, res) => {
+    if(req.body){
+        const token = req.headers["authorization"];
+        const { Host, Request } = req.body;
+
+        if (auth.ValidateToken(token) || await auth.CheckInterface(Host)) {
+
+            const result = await pt.getPointID(Request.Points);
+            const forwardReq = { Points:result, Options: Request.Options }
+            console.log(forwardReq)
+            res.status(200).json('ok')
+        }
     }
 }
 
@@ -170,6 +201,10 @@ module.exports.heavyLoad = async (req, res) => {
     res.status(200).json(`CPU intensive task is ${total}`);
 }
 
+module.exports.getHealth = async (req,res) => {
+    res.status(200).json('ok');
+}
+
 module.exports.checkTrust = async (req, res) => {
     const host = req.body;
 
@@ -184,9 +219,9 @@ module.exports.WriteData = async (req, res) => {
         const token = req.headers["authorization"];
         const { Host } = req.body;
         if (auth.ValidateToken(token) || auth.CheckInterface(Host)) {
-            rw.WriteDBI(req.body);
+            const msg = await rw.WriteDBI(req.body);
 
-            res.status(200).json('ok');
+            res.status(200).json(msg);
         }
         else {
             res.status(403).json('Invalid Token!')

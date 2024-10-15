@@ -25,10 +25,7 @@ module.exports.Authen = async (user, password) => {
     let res = 0;
     try {
 
-        const users = dbC.collection('Users');
-        //const exist = await users.findOne({ Username: user });
-
-        const exist = await query.QueryOne('Users', { Username: user})
+        const exist = await query.QueryOne('Users', { Username: user});
 
         if (exist) {
             const auth = await bcrypt.compare(password, exist.Password);

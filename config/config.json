@@ -5,6 +5,6 @@
     "Secret" : "uisngufdsgdygdghgjkf526t4urubfr6trfvf6gfyst5rggs4tvcwt5ewyrgdg5fdyf56d56dghsdgusg4",
     "DB": "mongodb://127.0.0.1:27017/",
     "PORT": 5876 ,
-    "NThread": 99,
+    "NThread": 1,
     "DEBUG": 0
 }

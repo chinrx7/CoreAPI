@@ -5,6 +5,7 @@ const os = require('os');
 const path = require('path');
 const routes = require('./routes/route');
 const logger = require('./middleware/log');
+const compression = require('compression')
 
 const { config } = require('./middleware/config');
 
@@ -16,6 +17,7 @@ const app = express();
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json({ limit: '100mb' }));
 app.use(cors({ origin: '*', credentials: true }));
+app.use(compression());
 
 const Port = config.PORT || 4123;
 
