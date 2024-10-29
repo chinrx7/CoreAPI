@@ -3,8 +3,8 @@
     "SYSTEM_TOKEN_TIME" : "99y",
     "USER_TOKEN_TIME" : "60m",
     "Secret" : "uisngufdsgdygdghgjkf526t4urubfr6trfvf6gfyst5rggs4tvcwt5ewyrgdg5fdyf56d56dghsdgusg4",
-    "DB": "mongodb://127.0.0.1:27017/",
+    "DB": "mongodb://192.168.9.131:27030/",
     "PORT": 5876 ,
-    "NThread": 1,
+    "NThread": 99,
     "DEBUG": 0
 }

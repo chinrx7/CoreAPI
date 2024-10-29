@@ -83,6 +83,9 @@ module.exports.read = async (req, res) => {
                 res.status(200).json(result)
             }
         }
+        else {
+            res.status(403).json('Invalid Token!')
+        }
     }
 }
 
